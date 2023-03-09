@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: url(1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+}
+.nav-bar{
+    height: 80px;
+    width: 100%;
+    background: rgba(255,255,255,.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nav-bar .logo{
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 80px;
+    padding: 0 100px;
+}
+.nav-bar ul{
+    list-style: none;
+    float: right;
+    margin-right: 40px;
+}
+.nav-bar li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+
+}
+.nav-bar li a{
+    color: #fff;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 7px 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+li a:hover{
+    border-bottom: 2px solid orangered;
+    transition: .3s;
+}
+.MainButton{
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.MainButton:focus{
+    color: #fff;
+    background: orangered;
+    border: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: rgba(255,255,255,.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    transform: scale(0) rotate(360deg);
+}
+
+.Loginform-box{
+    transform: scale(1) rotate(0);
+}
+.Registerform{
+    position: absolute;
+    transition: .5s;
+    transform: scale(0) rotate(360deg);
+    transition-delay: .3s;
+}
+.Registerform-box{
+    transform: scale(1) rotate(0deg);
+}
+h2{
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .3s;
+    
+}
+input:focus ~ label,
+input:valid ~ label
+{
+    top: -5px;
+}
+.remember-password{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-password span a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.remember-password input{
+    accent-color: orangered;
+    margin-right: 3px;
+}
+.btn{
+    background: orangered;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.creation-account{
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+}
+.creation-account a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .4s;
+}
+.creation-account a:hover{
+    border-bottom: 2px solid orangered;
+}
+
+ion-icon{
+    position: absolute;
+    right: 8px;
+    top: 20px;
+    font-size: 1.2em;
+    color: #fff;
+}
